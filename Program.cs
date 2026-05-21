@@ -17,8 +17,13 @@ namespace ChessHierarchyApp
         // Конструктор базового класса
         public ChessFigure(string name, string color)
         {
-            Name = name;
-            Color = color;
+        if (string.IsNullOrWhiteSpace(color))
+            {
+            throw new ArgumentException(
+                "Цвет фигуры не может быть пустым.");
+            }
+        Name = name;
+        Color = color;
         }
 
         // Деструктор
