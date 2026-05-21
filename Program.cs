@@ -25,13 +25,7 @@ namespace ChessHierarchyApp
         Name = name;
         Color = color;
         }
-
-        // Деструктор
-        ~ChessFigure()
-        {
-
-        }
-
+       
         // Виртуальный метод для второго названия
         public virtual void SecondName()
         {
