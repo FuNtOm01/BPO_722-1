@@ -49,7 +49,7 @@ namespace ChessHierarchyApp
     }
 
     //Пешка
-    public class Pawn : ChessFigure
+    public sealed class Pawn : ChessFigure
     {
         public Pawn(string color) : base("Пешка", color) { }
 
@@ -60,7 +60,7 @@ namespace ChessHierarchyApp
     }
 
     //Король
-    public class King : ChessFigure
+    public sealed class King : ChessFigure
     {
         public King(string color) : base("Король", color) { }
 
@@ -71,7 +71,7 @@ namespace ChessHierarchyApp
     }
 
     //класс Слон легкая фигура
-    public class Bishop : LightPiece
+    public sealed class Bishop : LightPiece
     {
         public Bishop(string color) : base("Слон", color) { }
 
@@ -87,7 +87,7 @@ namespace ChessHierarchyApp
     }
 
     //класс: Ладья Тяжелая фигура)
-    public class Rook : HeavyPiece
+    public sealed class Rook : HeavyPiece
     {
         public Rook(string color) : base("Ладья", color) { }
 
